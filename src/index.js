@@ -1,12 +1,28 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import ReactDom from 'react-dom';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const App = () => {
+	
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+	return (
+		<div className="ui comment container">
+		 <div className="comment">
+		  <a href="/" className="avatar">
+		    <img alt="avatar"/>
+		   </a>
+		  <div className="content">
+		   <a href="/" className="author" >
+		    Muhammad
+		   </a>
+		   <div className="metadata">
+		    <span className="data">Today at 6:00 PM</span>
+		    </div>
+		   <div className="text">Nice blog</div>
+		   </div>
+		   </div>
+
+	Hi There!
+	</div>)
+}
+
+ReactDom.render(<App />,document.querySelector('#root'));
