@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDom from 'react-dom';
+import faker from 'faker';
 
 const App = () => {
 	
 
 	return (
-		<div className="ui comment container">
+		<div className="ui contaier comments">
 		 <div className="comment">
 		  <a href="/" className="avatar">
-		    <img alt="avatar"/>
+		    <img alt="avatar" src={faker.image.avatar()}/>
 		   </a>
 		  <div className="content">
 		   <a href="/" className="author" >
@@ -21,7 +22,6 @@ const App = () => {
 		   </div>
 		   </div>
 
-	Hi There!
 	</div>)
 }
 
